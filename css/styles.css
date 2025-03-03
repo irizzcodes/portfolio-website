@@ -277,14 +277,45 @@ a:hover {
 .left-container {
   flex:1;
   padding-left: var(--space-m);
-  padding-right: var(--space-xs);
+  padding-right: var(--space-s);
 }
 
 .right-container {
   flex:1;
-  padding-left: var(--space-xs);
+  padding-left: var(--space-s);
   padding-right: var(--space-m);
+  overflow: hidden;
 }
+
+
+.about-item img {
+  width: clamp(175px,10vw,300px);
+  height: auto;
+  border-radius: 50%;
+  float: left;
+  padding-top: var(--space-s);
+  padding-bottom: var(--space-s);
+  padding-right: var(--space-s);
+}
+
+.academic-item img {
+  width: clamp(175px,10vw,300px);
+  height: auto;
+  float: left;
+  padding-top: var(--space-s);
+  padding-bottom: var(--space-s);
+  padding-right: var(--space-s);
+}
+
+.about-item p {
+  padding-top: var(--space-s);
+}
+
+.academic-item h5 {
+  padding-top: var(--space-s);
+}
+
+
 
 /* */
 footer {

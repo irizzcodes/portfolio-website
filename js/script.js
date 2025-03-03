@@ -3,7 +3,7 @@ function getCSSVar(variable) {
 }
 
 function loadParticles() {
-    const accentColor = getCSSVar("--accent"); // Fetch the dynamic accent color
+    const accentColor = getCSSVar("--accent");
 
     tsParticles.load("particles-js", {
         particles: {
@@ -43,13 +43,13 @@ function loadParticles() {
 
 // Load particles after the page has fully loaded
 document.addEventListener("DOMContentLoaded", () => {
-    setTimeout(loadParticles, 100); // Slight delay to ensure CSS is applied
+    setTimeout(loadParticles, 100);
 });
 
 // Reload particles when the theme changes
 const observer = new MutationObserver(() => {
-    tsParticles.dom().forEach((instance) => instance.destroy()); // Destroy existing particles
-    setTimeout(loadParticles, 50); // Reload with the updated theme
+    tsParticles.dom().forEach((instance) => instance.destroy()); 
+    setTimeout(loadParticles, 50); 
 });
 observer.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
 
@@ -73,7 +73,28 @@ function toggleTheme() {
     const currentTheme = document.documentElement.getAttribute("data-theme");
     const newTheme = currentTheme === "light" ? "dark" : "light";
 
-    applyTheme(newTheme); // Apply new theme
-    localStorage.setItem("theme", newTheme); // Save the correct theme
+    applyTheme(newTheme); 
+    localStorage.setItem("theme", newTheme); 
     console.log("Theme changed to:", newTheme);
+}
+
+// for the carousel
+const track = document.querySelector('.carousel-track');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+let index = 0;
+
+nextBtn.addEventListener('click', () => {
+    index = (index + 1) % track.children.length;
+    updateCarousel();
+});
+
+prevBtn.addEventListener('click', () => {
+    index = (index - 1 + track.children.length) % track.children.length;
+    updateCarousel();
+});
+
+function updateCarousel() {
+    track.style.transform = `translateX(-${index * 100}%)`;
 }
