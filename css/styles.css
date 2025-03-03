@@ -6,8 +6,8 @@ body {
 :root[data-theme="light"] {
     --text: #0d1212;
     --text-secondary: #567676;
-    --background: #e8f2f2;
-    --background-secondary: #deeded;
+    --background: #deeded;
+    --background-secondary: #bedada;
     --primary: #2a5a59;
     --secondary: #7ececd;
     --accent: #32a9a3;
@@ -210,7 +210,7 @@ header {
 
 .nav-container {
   display: flex;
-  padding: var(--space-xs);
+  padding: var(--space-s);
   justify-content: flex-end;
   align-items: center;
   height: 2rem;
@@ -263,5 +263,62 @@ a:hover {
 }
 
 /* main */
+
+.section-wrapper {
+  background: var(--text);
+  color: var(--background);
+}
+
+.flex-container {
+  display: flex;
+  padding-bottom: 2.3rem;
+}
+
+.left-container {
+  flex:1;
+  padding-left: var(--space-m);
+  padding-right: var(--space-xs);
+}
+
+.right-container {
+  flex:1;
+  padding-left: var(--space-xs);
+  padding-right: var(--space-m);
+}
+
+/* */
+footer {
+  color: var(--text);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.copyright-container {
+  padding-left: var(--space-m);
+  padding-right: var(--space-m);
+}
+
+.contact-list {
+  line-height: 0.5rem;
+}
+
+footer div div h4 {
+  margin-bottom: 0px;
+}
+
+.web-logos a{
+  margin-right:0.3rem;
+
+}
+
+.contact-container {
+  padding-left: var(--space-m);
+  padding-right: var(--space-m);
+}
 
 
