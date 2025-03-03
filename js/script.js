@@ -1,5 +1,5 @@
 function getCSSVar(variable) {
-    return getComputedStyle(document.documentElement).getPropertyValue(variable).trim() || "#ffffff";
+    return getComputedStyle(document.documentElement).getPropertyValue(variable).trim() || "#00FFFF";
 }
 
 function loadParticles() {
@@ -52,3 +52,28 @@ const observer = new MutationObserver(() => {
     setTimeout(loadParticles, 50); // Reload with the updated theme
 });
 observer.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+
+
+// apply theme
+function applyTheme(theme) {
+    document.documentElement.setAttribute("data-theme", theme);
+
+    document.getElementById("light-switch").style.display = theme === "light" ? "block" : "none";
+    document.getElementById("dark-switch").style.display = theme === "dark" ? "block" : "none";
+}
+
+// load theme when refreshing ( from local storage )
+document.addEventListener("DOMContentLoaded", () => {
+    const savedTheme = localStorage.getItem("theme") || "light";
+    applyTheme(savedTheme);
+});
+
+// button function 
+function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute("data-theme");
+    const newTheme = currentTheme === "light" ? "dark" : "light";
+
+    applyTheme(newTheme); // Apply new theme
+    localStorage.setItem("theme", newTheme); // Save the correct theme
+    console.log("Theme changed to:", newTheme);
+}
