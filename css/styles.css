@@ -240,6 +240,10 @@ main div img {
   margin-bottom: 0px;
 }
 
+.introduction-item h4 {
+  margin-top: 0.7rem;
+}
+
 .introduction-item a {
   margin-right: var(--space-xs);
 }
@@ -250,7 +254,6 @@ main div img {
   justify-content: center;
   align-content: center;
   margin-left: var(--space-m);
-  line-height: var(--space-xs);
 }
 
 a {
@@ -315,6 +318,47 @@ a:hover {
   padding-top: var(--space-s);
 }
 
+/* */
+
+.work-container div h4,h5,p {
+  margin: 1rem;
+}
+
+.work-container img {
+  width: clamp(130px,5vw,200px);
+  height: auto;
+  float: left;
+  padding-top: var(--space-s);
+  padding-bottom: var(--space-s);
+  padding-right: var(--space-s);
+}
+
+.work-container h4 {
+  padding-top: var(--space-m);
+}
+
+.history {
+  text-align: end;
+}
+
+.background-container img {
+  width: clamp(200px,15vw,400px);
+  height: auto;
+  float: left;
+  padding-top: var(--space-s);
+  padding-bottom: var(--space-s);
+  padding-right: var(--space-s);
+
+}
+
+.background-container p {
+  padding-top: var(--space-s);
+}
+
+.background-container p {
+  padding-top: var(--space-s);
+  
+} 
 
 
 /* */
@@ -338,6 +382,10 @@ footer {
   line-height: 0.5rem;
 }
 
+.contact-list p {
+  margin-left: 0;
+}
+
 footer div div h4 {
   margin-bottom: 0px;
 }
@@ -346,6 +394,7 @@ footer div div h4 {
   margin-right:0.3rem;
 
 }
+
 
 .contact-container {
   padding-left: var(--space-m);
