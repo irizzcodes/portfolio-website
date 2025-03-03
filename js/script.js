@@ -7,11 +7,11 @@ function loadParticles() {
 
     tsParticles.load("particles-js", {
         particles: {
-            number: { value: 15, density: { enable: true, value_area: 1000 } },
+            number: { value: 40, density: { enable: true, value_area: 1100 } },
             color: { value: accentColor },
             shape: { 
                 type: "circle",
-                stroke: { width: 1, color: accentColor },
+                stroke: { width: 0.6, color: accentColor },
                 polygon: { nb_sides: 6 }
             },
             opacity: { value: 0.8, random: false },
@@ -23,7 +23,7 @@ function loadParticles() {
                 opacity: 0.4, 
                 width: 1 
             },
-            move: { enable: true, speed: 1.5, random: false, out_mode: "out" }
+            move: { enable: true, speed: 0.5, random: false, out_mode: "out" }
         },
         interactivity: {
             detect_on: "window",  
