@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root[data-theme="light"] {
+    --text: #0d1212;
+    --background: #e8f2f2;
+    --primary: #2a5a59;
+    --secondary: #7ececd;
+    --accent: #32a9a3;
+  }
+  :root[data-theme="dark"] {
+    --text: #edf2f2;
+    --background: #0d1717;
+    --primary: #a5d5d4;
+    --secondary: #318180;
+    --accent: #56cdc7;
+  }
+  
+  :root[data-theme="light"] {
+    --text-50: #f0f4f4;
+    --text-100: #e1eaea;
+    --text-200: #c4d4d4;
+    --text-300: #a6bfbf;
+    --text-400: #89a9a9;
+    --text-500: #6b9494;
+    --text-600: #567676;
+    --text-700: #405959;
+    --text-800: #2b3b3b;
+    --text-900: #151e1e;
+    --text-950: #0b0f0f;
+  
+    --background-50: #eff6f6;
+    --background-100: #deeded;
+    --background-200: #bedada;
+    --background-300: #9dc8c8;
+    --background-400: #7cb6b6;
+    --background-500: #5ca3a3;
+    --background-600: #498383;
+    --background-700: #376262;
+    --background-800: #254141;
+    --background-900: #122121;
+    --background-950: #091010;
+  
+    --primary-50: #eef7f7;
+    --primary-100: #dcefee;
+    --primary-200: #badede;
+    --primary-300: #97cecd;
+    --primary-400: #74bebc;
+    --primary-500: #52adac;
+    --primary-600: #418b89;
+    --primary-700: #316867;
+    --primary-800: #214545;
+    --primary-900: #102322;
+    --primary-950: #081111;
+  
+    --secondary-50: #edf8f8;
+    --secondary-100: #daf1f1;
+    --secondary-200: #b5e3e2;
+    --secondary-300: #90d5d4;
+    --secondary-400: #6bc7c5;
+    --secondary-500: #46b9b7;
+    --secondary-600: #389492;
+    --secondary-700: #2a6f6e;
+    --secondary-800: #1c4a49;
+    --secondary-900: #0e2525;
+    --secondary-950: #071212;
+  
+    --accent-50: #ebf9f8;
+    --accent-100: #d8f3f2;
+    --accent-200: #b0e8e5;
+    --accent-300: #89dcd8;
+    --accent-400: #62d0cb;
+    --accent-500: #3bc4bd;
+    --accent-600: #2f9d98;
+    --accent-700: #237672;
+    --accent-800: #174f4c;
+    --accent-900: #0c2726;
+    --accent-950: #061413;
+  
+  }
+  :root[data-theme="dark"] {
+    --text-50: #0b0f0f;
+    --text-100: #151e1e;
+    --text-200: #2b3b3b;
+    --text-300: #405959;
+    --text-400: #567676;
+    --text-500: #6b9494;
+    --text-600: #89a9a9;
+    --text-700: #a6bfbf;
+    --text-800: #c4d4d4;
+    --text-900: #e1eaea;
+    --text-950: #f0f4f4;
+  
+    --background-50: #091010;
+    --background-100: #122121;
+    --background-200: #254141;
+    --background-300: #376262;
+    --background-400: #498383;
+    --background-500: #5ca3a3;
+    --background-600: #7cb6b6;
+    --background-700: #9dc8c8;
+    --background-800: #bedada;
+    --background-900: #deeded;
+    --background-950: #eff6f6;
+  
+    --primary-50: #081111;
+    --primary-100: #102322;
+    --primary-200: #214545;
+    --primary-300: #316867;
+    --primary-400: #418b89;
+    --primary-500: #52adac;
+    --primary-600: #74bebc;
+    --primary-700: #97cecd;
+    --primary-800: #badede;
+    --primary-900: #dcefee;
+    --primary-950: #eef7f7;
+  
+    --secondary-50: #071212;
+    --secondary-100: #0e2525;
+    --secondary-200: #1c4a49;
+    --secondary-300: #2a6f6e;
+    --secondary-400: #389492;
+    --secondary-500: #46b9b7;
+    --secondary-600: #6bc7c5;
+    --secondary-700: #90d5d4;
+    --secondary-800: #b5e3e2;
+    --secondary-900: #daf1f1;
+    --secondary-950: #edf8f8;
+  
+    --accent-50: #061413;
+    --accent-100: #0c2726;
+    --accent-200: #174f4c;
+    --accent-300: #237672;
+    --accent-400: #2f9d98;
+    --accent-500: #3bc4bd;
+    --accent-600: #62d0cb;
+    --accent-700: #89dcd8;
+    --accent-800: #b0e8e5;
+    --accent-900: #d8f3f2;
+    --accent-950: #ebf9f8;
+  
+  }
+
+  /* @link https://utopia.fyi/type/calculator?c=320,20,1.2,1240,20,1.2,5,2,1000&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+    --step--2: clamp(0.8681rem, 0.8681rem + 0vw, 0.8681rem);
+    --step--1: clamp(1.0417rem, 1.0417rem + 0vw, 1.0417rem);
+    --step-0: clamp(1.25rem, 1.25rem + 0vw, 1.25rem);
+    --step-1: clamp(1.5rem, 1.5rem + 0vw, 1.5rem);
+    --step-2: clamp(1.8rem, 1.8rem + 0vw, 1.8rem);
+    --step-3: clamp(2.16rem, 2.16rem + 0vw, 2.16rem);
+    --step-4: clamp(2.592rem, 2.592rem + 0vw, 2.592rem);
+    --step-5: clamp(3.1104rem, 3.1104rem + 0vw, 3.1104rem);
+  }
+
+h1{font-size:var(--step-5);}
+h2{font-size:var(--step-4);}
+h3{font-size:var(--step-3);}
+h4{font-size:var(--step-2);}
+h5{font-size:var(--step-1);}
+h6{font-size:var(--step-0);}
+p{font-size:var(--step-0);}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0); /* Change to match your website */
+    z-index: -1; /* Ensures it stays behind other content */
+}
+
+
+  
