@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 :root[data-theme="light"] {
@@ -13,7 +14,7 @@ body {
     --accent: #32a9a3;
   }
   :root[data-theme="dark"] {
-    --text: #edf2f2;
+    --text: #eff6f6;
     --text-secondary: #89a9a9;
     --background: #0d1717;
     --background-secondary: #122121;
@@ -168,6 +169,14 @@ h5{font-size:var(--step-1);}
 h6{font-size:var(--step-0);}
 p{font-size:var(--step-0);}
 
+.section-wrapper h1,h2,h3,h4,h5,h6{
+  color: var(--accent)
+}
+
+.work-container div h5,h6 {
+  color: var(--primary)
+}
+
 /* @link https://utopia.fyi/space/calculator?c=320,20,1.2,1240,20,1.2,5,2,1000&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
 :root {
@@ -317,6 +326,53 @@ a:hover {
 .academic-item h5 {
   padding-top: var(--space-s);
 }
+
+/* */
+
+.portfolio-container div h1 {
+  color:var(--accent);
+}
+
+.portfolio-container {
+  margin-left: var(--space-m);
+  margin-right: var(--space-m);
+}
+
+.card-container {
+  display:flex;
+  flex-direction: column;
+}
+
+.card-items h5,p {
+  margin-left: 0px !important;
+}
+
+.card-items h5 {
+  color: var(--secondary);
+}
+
+.card-items p {
+  color: var(--text);
+}
+
+.card-items {
+  display: flex;
+  margin-bottom: var(--space-xl);
+}
+
+.card-items img {
+  min-width: clamp(320px,50vw,500px);
+  border-radius: 10px;
+}
+
+.card-info {
+  margin-left: var(--space-m);
+  max-width: 50%;
+
+}
+
+
+
 
 /* */
 
