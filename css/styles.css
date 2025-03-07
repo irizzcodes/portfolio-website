@@ -9,18 +9,24 @@ body {
     --text-secondary: #567676;
     --background: #deeded;
     --background-secondary: #bedada;
+    --special-background: #142020;
     --primary: #2a5a59;
-    --secondary: #7ececd;
-    --accent: #32a9a3;
+    --secondary: #73c7c5;
+    --accent: #2ab1aa;
+    --special: #0d1212;
+    --text-special: #eff6f6;
   }
   :root[data-theme="dark"] {
     --text: #eff6f6;
     --text-secondary: #89a9a9;
-    --background: #0d1717;
+    --background: #122121;
     --background-secondary: #122121;
+    --special-background: #0d1212;
     --primary: #a5d5d4;
-    --secondary: #318180;
+    --secondary: #2e9492;
     --accent: #56cdc7;
+    --special: #eff6f6;
+    --text-special: #eff6f6;
   }
   
   :root[data-theme="light"] {
@@ -173,6 +179,11 @@ p{font-size:var(--step-0);}
   color: var(--accent)
 }
 
+.flex-container p {
+  color: var(--text-special)
+}
+
+
 .work-container div h5,h6 {
   color: var(--primary)
 }
@@ -213,7 +224,7 @@ p{font-size:var(--step-0);}
 }
 
 header {
-  background: var(--text);
+  background: var(--special-background);
   color: var(--background);
 }
 
@@ -247,6 +258,7 @@ main div img {
 
 .introduction-item h1 {
   margin-bottom: 0px;
+  color: var(--special) !important;
 }
 
 .introduction-item h4 {
@@ -277,7 +289,7 @@ a:hover {
 /* main */
 
 .section-wrapper {
-  background: var(--text);
+  background: var(--special-background);
   color: var(--background);
 }
 
