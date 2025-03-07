@@ -457,4 +457,80 @@ footer div div h4 {
   padding-right: var(--space-m);
 }
 
+@media (max-width: 706px){
+  .flex-container {
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 660px) {
+  .card-items {
+    flex-direction: column;
+  }
+
+  .card-info {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .nav-container h3 {
+    display: none;
+  }
+
+  .nav-container {
+    height: 0.5rem;
+  }
+
+  .introduction-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .introduction-item {
+    justify-content: center;
+    align-items: center;
+    margin:0;
+  }
+
+  .introduction-item h4 {
+    align-items: center;
+    display:flex;
+    justify-content: center;
+  }
+
+  .introduction-item h4 span {
+    display: none;
+  }
+
+  
+
+  .card-items img {
+    min-width: clamp(250px,60vw,350px);
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section-wrapper img {
+    display:none;
+  }
+
+  .work-container div h4,h5 {
+    margin-left: 0;
+  }
+
+  .introduction-item h1 {
+    font-size: clamp(38px,10vw,60px);
+  }
+
+  .introduction-item h4 a:last-child {
+    margin-right: 0;
+  }
+  
+}
+
 

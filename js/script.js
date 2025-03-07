@@ -77,24 +77,3 @@ function toggleTheme() {
     localStorage.setItem("theme", newTheme); 
     console.log("Theme changed to:", newTheme);
 }
-
-// for the carousel
-const track = document.querySelector('.carousel-track');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-
-let index = 0;
-
-nextBtn.addEventListener('click', () => {
-    index = (index + 1) % track.children.length;
-    updateCarousel();
-});
-
-prevBtn.addEventListener('click', () => {
-    index = (index - 1 + track.children.length) % track.children.length;
-    updateCarousel();
-});
-
-function updateCarousel() {
-    track.style.transform = `translateX(-${index * 100}%)`;
-}
