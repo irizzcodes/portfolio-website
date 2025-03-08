@@ -92,7 +92,7 @@ window.addEventListener("load", () => {
             document.body.style.visibility = "visible"; // Show content
             document.body.style.overflow = "auto"; // Enable scrolling
         }, 500); // Matches spinner fade-out duration
-    }, 2500); // Keep spinner visible for 2.5s
+    }, 100); // Keep spinner visible for 0.5s
 });
 
 

@@ -7,6 +7,11 @@ body {
     visibility: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 :root[data-theme="light"] {
     --text: #0d1212;
     --text-secondary: #567676;
@@ -231,6 +236,30 @@ header {
   color: var(--background);
 }
 
+button {
+  background-color: transparent;
+  color: var(--accent);
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  padding: clamp(2px,1vw,5px) clamp(10px,2vw,20px);
+  margin-right: var(--space-s);
+  border: 2px solid var(--accent);
+}
+
+button:hover {
+  box-shadow: 0 0 10px var(--accent)
+}
+
+#dark-switch {
+  fill: var(--accent);
+  color: var(var(--accent));
+}
+
+#light-switch {
+  fill: var(--accent)
+}
+
 .nav-container {
   display: flex;
   padding: var(--space-s);
@@ -401,6 +430,7 @@ a:hover {
 .card-info {
   margin-left: var(--space-m);
   max-width: 40%;
+  padding-bottom: 1rem;
 }
 
 
@@ -497,6 +527,11 @@ footer div div h4 {
 }
 
 @media (max-width: 660px) {
+  .switch {
+    margin-right: 1px;
+    border: 0;
+  }
+
   .card-items {
     flex-direction: column;
   }
