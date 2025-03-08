@@ -77,3 +77,32 @@ function toggleTheme() {
     localStorage.setItem("theme", newTheme); 
     console.log("Theme changed to:", newTheme);
 }
+
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        const spinner = document.querySelector(".spinner");
+        const preloader = document.getElementById("preloader");
+
+        spinner.style.transition = "transform 0.5s ease-in-out, opacity 0.5s ease-in-out"; // Smooth transition
+        spinner.style.transform = "scale(0)"; // Shrinks the spinner
+        spinner.style.opacity = "0"; // Makes it disappear
+
+        setTimeout(() => {
+            preloader.style.display = "none"; // Fully remove preloader
+            document.body.style.visibility = "visible"; // Show content
+            document.body.style.overflow = "auto"; // Enable scrolling
+        }, 500); // Matches spinner fade-out duration
+    }, 2500); // Keep spinner visible for 2.5s
+});
+
+
+
+
+
+
+
+
+
+
+
+
