@@ -242,7 +242,7 @@ button {
   border-radius: 10px;
   text-decoration: none;
   cursor: pointer;
-  padding: clamp(2px,1vw,5px) clamp(10px,2vw,20px);
+  padding: clamp(2px,1vw,5px) clamp(25px,2vw,35px);
   margin-right: var(--space-s);
   border: 2px solid var(--accent);
 }
@@ -355,8 +355,8 @@ a:hover {
 }
 
 .academic-item img {
-  width: clamp(175px,10vw,300px);
-  height: auto;
+  width: clamp(200px,10vw,300px);
+  height: 200px;
   float: left;
   padding-top: var(--space-s);
   padding-bottom: var(--space-s);
@@ -596,7 +596,7 @@ footer div div h4 {
 
   .introduction-item h4 a:last-child {
     margin-right: 0;
-  }
+  }  
   
 }
 
@@ -629,4 +629,51 @@ footer div div h4 {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+
+.slideshow-container {
+  max-width: 90%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display:none;
+}
+
+/* The dots/bullets/indicators */
+.line {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: grey;
+  border-radius: 50%;
+  display: flex;
+  transition: background-color 0.6s ease;
+}
+
+.active, .line:hover {
+  background-color: var(--accent);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  align-items: center;
+  width: 100%;
+  padding-top: var(--space-s);
+  gap: 5px;
 }
